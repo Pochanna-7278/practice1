@@ -1,0 +1,28 @@
+user@chinna:~$ mkdir chinna1
+user@chinna:~$ cd chinna1
+user@chinna:~/chinna1$ git init
+Initialized empty Git repository in /home/user/chinna1/.git/
+user@chinna:~/chinna1$ git add .
+user@chinna:~/chinna1$ git commit -m "added"
+[master (root-commit) c411e91] added
+ 1 file changed, 7 insertions(+)
+ create mode 100644 hello.java
+user@chinna:~/chinna1$ git remote add origin https://github.com/Pochanna-7278/chinna1.git
+user@chinna:~/chinna1$ git push -u origin master
+Username for 'https://github.com': Pochanna-7278
+Password for 'https://Pochanna-7278@github.com': 
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 318 bytes | 318.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/Pochanna-7278/chinna1/pull/new/master
+remote: 
+To https://github.com/Pochanna-7278/chinna1.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+user@chinna:~/chinna1$ 
+
