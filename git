@@ -1,0 +1,117 @@
+user@chinna:~$ cd demo3
+user@chinna:~/demo3$ git init
+Initialized empty Git repository in /home/user/demo3/.git/
+user@chinna:~/demo3$ ls -a
+.  ..  .git
+user@chinna:~/demo3$ git config --global user.name "Pochanna-7278"
+user@chinna:~/demo3$ git config --global user.email "pochannakotrangi@gmail.com"user@chinna:~/demo3$ git config --list
+user.name=Pochanna-7278
+user.email=pochannakotrangi@gmail.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+user@chinna:~/demo3$ git clone https://github.com/Pochanna-7278/push.git
+Cloning into 'push'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 864 bytes | 864.00 KiB/s, done.
+user@chinna:~/demo3$ ls
+push
+user@chinna:~/demo3$ cd push
+user@chinna:~/demo3/push$ gedit index.html
+user@chinna:~/demo3/push$ ls
+index.html  README.md
+user@chinna:~/demo3/push$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+user@chinna:~/demo3/push$ git commit -m "10-04-2025"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+user@chinna:~/demo3/push$ git add index.html
+user@chinna:~/demo3/push$ git commit -m "10-04-2025"
+[main 8b21b6b] 10-04-2025
+ 1 file changed, 6 insertions(+)
+ create mode 100644 index.html
+user@chinna:~/demo3/push$ git remote set-url origin https://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@github.com/Pochanna-7278/push
+user@chinna:~/demo3/push$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 329 bytes | 329.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Pochanna-7278/push
+   13849cf..8b21b6b  main -> main
+user@chinna:~/demo3/push$ gedit index.html
+user@chinna:~/demo3/push$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 994 bytes | 994.00 KiB/s, done.
+From https://github.com/Pochanna-7278/push
+   8b21b6b..8cb1935  main       -> origin/main
+Updating 8b21b6b..8cb1935
+Fast-forward
+ index.html | 1 +
+ 1 file changed, 1 insertion(+)
+user@chinna:~/demo3/push$ gedit index.html
+^C
+user@chinna:~/demo3/push$ 
+user@chinna:~/demo3/push$ cd
+user@chinna:~$ cd mkdir
+bash: cd: mkdir: No such file or directory
+user@chinna:~$ mkdir prac
+user@chinna:~$ cd prac
+user@chinna:~/prac$ git init
+Initialized empty Git repository in /home/user/prac/.git/
+user@chinna:~/prac$ git  config --global user.name "Pochanna-7278"
+user@chinna:~/prac$ git  config --global user.email "pochannakotrangi@gmail.com"
+user@chinna:~/prac$ git config --list
+user.name=Pochanna-7278
+user.email=pochannakotrangi@gmail.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+user@chinna:~/prac$ git clone https://github.com/Pochanna-7278/prac.git
+Cloning into 'prac'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 862 bytes | 862.00 KiB/s, done.
+user@chinna:~/prac$ cd prac
+user@chinna:~/prac/prac$ gedit index.html
+user@chinna:~/prac/prac$ git add index.html
+user@chinna:~/prac/prac$ git commit -m "10-04-2025"
+[main b7ee4c5] 10-04-2025
+ 1 file changed, 7 insertions(+)
+ create mode 100644 index.html
+user@chinna:~/prac/prac$ git remote set-url origin https://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@github.com/Pochanna-7278/prac
+user@chinna:~/prac/prac$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 324 bytes | 324.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Pochanna-7278/prac
+   5a3e48d..b7ee4c5  main -> main
+user@chinna:~/prac/prac$ git pull
+Already up to date.
+user@chinna:~/prac/prac$ 
+
