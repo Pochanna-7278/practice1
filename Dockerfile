@@ -1,8 +1,8 @@
-FROM python:3.9
-WORKDIR /app
-COPY app.py .
-RUN pip install --no-cache-dir flask
-EXPOSE 5000
-CMD ["python","app.py"]
-#sudo docker build -t myimage .
-sudo docker run -p 5000:5000 myimage
+# Use Nginx base image
+FROM nginx:alpine
+
+# Copy your HTML into the Nginx web directory
+COPY class.html /usr/share/nginx/html/index.html
+
+# Expose port 8004
+EXPOSE 8020
